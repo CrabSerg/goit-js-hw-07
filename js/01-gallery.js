@@ -1,33 +1,25 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
+const galeryRef = document.querySelector(`.gallery`)
 
+const galeryMakrup = galleryItems.map((element)=>
+`<div class="gallery__item">
+    <a class="gallery__link" href="${element.original}">
+        <img
+            class="gallery__image"
+            src="${element.preview}"
+            data-source="${element.original}"
+            alt="${element.description}"
+        />
+    </a>
+</div>`
+    // console.log(element); 
+)
+.join("");
 
-let base = prompt("Напиши какое-то число");
-base = Number(base);
-console.log(base);
+galeryRef.insertAdjacentHTML("afterbegin", galeryMakrup);
 
-let power = prompt("В сколько умножить?");
-power = Number(power);
-console.log(power);
-
-console.log("Будет число:", base*power)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log(galleryItems);
+console.log(galeryMakrup);
+console.log(galeryRef);
 
 
