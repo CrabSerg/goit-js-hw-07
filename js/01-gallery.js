@@ -13,13 +13,20 @@ const galeryMakrup = galleryItems.map((element)=>
         />
     </a>
 </div>`
-    // console.log(element); 
 )
 .join("");
 
+
 galeryRef.insertAdjacentHTML("afterbegin", galeryMakrup);
 
-console.log(galeryMakrup);
-console.log(galeryRef);
 
+const instance = Object.create
+basicLightbox.create(`
+    <img src="${element.original}" width="800" height="600">
+`)
+
+instance.show()
+
+
+console.log(instance)
 
