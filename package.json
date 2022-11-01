@@ -1,0 +1,19 @@
+{
+  "name": "123",
+  "version": "1.0.0",
+  "description": "dsefrsaf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrabSerg/goit-js-hw-07.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrabSerg/goit-js-hw-07/issues"
+  },
+  "homepage": "https://github.com/CrabSerg/goit-js-hw-07#readme"
+}
